@@ -1,0 +1,13 @@
+Status	/home/ngs-01/ngs1_project/bwa_align/bwaAlign_unshuffled_sample_part_001.sorted.bam	/home/ngs-01/ngs1_project/bwa_align/bwaAlign_unshuffled_sample_part_002.sorted.bam	/home/ngs-01/ngs1_project/bwa_align/bwaAlign_unshuffled_sample_part_003.sorted.bam	/home/ngs-01/ngs1_project/bwa_align/bwaAlign_unshuffled_sample_part_004.sorted.bam	/home/ngs-01/ngs1_project/bwa_align/bwaAlign_unshuffled_sample_part_005.sorted.bam	/home/ngs-01/ngs1_project/hisat_align/shuffeled_hisatAlign1.sorted.bam	/home/ngs-01/ngs1_project/hisat_align/shuffeled_hisatAlign2.sorted.bam	/home/ngs-01/ngs1_project/hisat_align/shuffeled_hisatAlign3.sorted.bam	/home/ngs-01/ngs1_project/hisat_align/shuffeled_hisatAlign4.sorted.bam	/home/ngs-01/ngs1_project/hisat_align/shuffeled_hisatAlign5.sorted.bam
+Assigned	0	0	0	0	0	47344	47476	47457	47785	47328
+Unassigned_Unmapped	1879220	1879100	1878038	1879057	1878777	1794599	1794194	1794470	1794778	1795210
+Unassigned_MappingQuality	0	0	0	0	0	0	0	0	0	0
+Unassigned_Chimera	0	0	0	0	0	0	0	0	0	0
+Unassigned_FragmentLength	0	0	0	0	0	0	0	0	0	0
+Unassigned_Duplicate	0	0	0	0	0	0	0	0	0	0
+Unassigned_MultiMapping	0	0	0	0	0	2788	2839	2694	3055	2836
+Unassigned_Secondary	0	0	0	0	0	0	0	0	0	0
+Unassigned_NonSplit	0	0	0	0	0	0	0	0	0	0
+Unassigned_NoFeatures	94930	94834	95904	95290	95079	4304	4518	4277	4384	4344
+Unassigned_Overlapping_Length	0	0	0	0	0	0	0	0	0	0
+Unassigned_Ambiguity	0	0	0	0	0	4361	4320	4239	4441	4349

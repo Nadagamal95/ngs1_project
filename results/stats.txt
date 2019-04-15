@@ -1,0 +1,5 @@
+REF_Total_Exons(count|total|mean|std)	1039|815029|784.4|748.5
+REF_Unique_Exons(count|total|mean|std)	23|23871|1037.9|2337.1
+REF_5_Prime_UTR(count)	528
+REF_3_Prime_UTR(count)	1550
+REF_Intronic_Edges(count)	0
