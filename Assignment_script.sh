@@ -15,7 +15,7 @@ source activate ngs1
 
 #download whole sra data
 
-mkdir ~/ngs1_project/ && cd ~/ngs1_project/
+mkdir -p ~/ngs1_project/ && cd ~/ngs1_project/
 wget -c ftp://ftp-trace.ncbi.nih.gov/sra/sra-instant/reads/ByRun/sra/SRR/SRR879/SRR8797509/SRR8797509.sra 
 
 #Download the SRAtoolkit
@@ -58,7 +58,7 @@ seqkit split2 -1 SRR8797509_1.fastq -2 SRR8797509_2.fastq -p 5 -O split_main_rea
 
 #shuffleing the main fastq file (paired-end reads r1 & r2) each containing 5000000 reads
 
-mkdir ~/ngs1_project/shuffled_reads 
+mkdir -p ~/ngs1_project/shuffled_reads 
 
 seqkit shuffle SRR8797509_1.fastq > cd ~/ngs1_project/shuffled_reads/shuffled_SRR8797509_1.part_001.fastq 
 seqkit shuffle SRR8797509_2.fastq > cd ~/ngs1_project/shuffled_reads/shuffled_SRR8797509_2.part_001.fastq
@@ -81,7 +81,7 @@ conda install -c bioconda multiqc
  
 #fastqc assessment for the first sample before shuffling
 
-mkdir ~/ngs1_project/fastqc/fastqc_unshuffled && cd ~/ngs1_project/fastqc/fastqc_unshuffled
+mkdir -p ~/ngs1_project/fastqc/fastqc_unshuffled && cd ~/ngs1_project/fastqc/fastqc_unshuffled
 
 for f in ~/ngs1_project/split_main_reads/SRR8797509_*.part_001.fastq;do fastqc -t 1 -f fastq -noextract -o . $f;done
 
@@ -93,7 +93,7 @@ multiqc -z -o . .
 
 #fastqc assessment for the first sample after shuffling
 
-mkdir ~/ngs1_project/fastqc/fastqc_shuffled && cd ~/ngs1_project/fastqc/fastqc_shuffled 
+mkdir -p ~/ngs1_project/fastqc/fastqc_shuffled && cd ~/ngs1_project/fastqc/fastqc_shuffled 
 
 for f in ~/ngs1_project/shuffled_reads/split_shuffled_reads/shuffled_SRR8797509_*.part_001.part_001.fastq;do fastqc -t 1 -f fastq -noextract -o . $f;done
 
@@ -107,7 +107,7 @@ multiqc -z -o . .
 
 #mild trimming:(unshuffled)
 
-mkdir ~/ngs1_project/trimming/Unshuffled && cd ~/ngs1_project/trimming/Unshuffled
+mkdir -p ~/ngs1_project/trimming/Unshuffled && cd ~/ngs1_project/trimming/Unshuffled
 
 for ((i=1;i<=5;i++));do
 
@@ -132,7 +132,7 @@ done
 
 #Aggressive Trimmimg
 
-mkdir ~/ngs1_project/trimming/Shuffled && cd ~/ngs1_project/trimming/Shuffled
+mkdir -p ~/ngs1_project/trimming/Shuffled && cd ~/ngs1_project/trimming/Shuffled
 
 for ((i=1;i<=5;i++));do
 
